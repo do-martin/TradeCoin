@@ -1,0 +1,232 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "newDebt",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "repayDebtsToZero",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "debtor",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "creditor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fees",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "addToDebtFund",
+						"type": "uint256"
+					}
+				],
+				"name": "createDebtsList",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "debtFund",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "debtsList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "creditorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "debtAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "interest",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeOfDebt",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "debtor",
+						"type": "address"
+					}
+				],
+				"name": "getDebtsCreditorAndAmount",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "debtor",
+						"type": "address"
+					}
+				],
+				"name": "immediateRepayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "debtor",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "creditor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "repayDebts",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "restDebts",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DebtsContract.sol": "DebtsContract"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DebtsContract.sol": {
+			"keccak256": "0x5069f18ae7c75738641a576c4160b215853def3a4f8de1ea9061eda4e768f865",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0a838e21ce1edbce900caea552bea47f337375dbba0b57ee1a8468195f019e52",
+				"dweb:/ipfs/QmZHDXURgNV3Bzi2Q6Adwm7YPYUsGYtEsMfuuyFgv3YSN5"
+			]
+		},
+		"contracts/models/ModelLibrary.sol": {
+			"keccak256": "0x1d2c9eead01acfb4ade8f0ba21203d173abbbae621e070c6cae2cbcc575cda0a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://056072bf4db61f36a664d1a4d3d70634e0af229713f9f0f9123eaff778038f64",
+				"dweb:/ipfs/QmRCVpxE5wEZ8jMEoCGfnaiZQ8snWAMWdU8HehDQ9QmriN"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"@trt-utils/TRTStrings.sol": "TRTStrings"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@trt-utils/TRTStrings.sol": {
+			"keccak256": "0xd8e62453a12988c284c296f504e661e85bcf28473a59204fb60db867ab920a3b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://59eab2fd6003fecd776b6869c151862157fbee8e2d59efa78415a76c6381700c",
+				"dweb:/ipfs/QmXG3yxccug87PAZQtCAc5zyVQhy1YVqrjcktLDKgxN3Ez"
+			]
+		}
+	},
+	"version": 1
+}
